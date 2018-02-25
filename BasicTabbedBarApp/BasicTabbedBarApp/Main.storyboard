@@ -33,7 +33,7 @@
                                 <rect key="frame" x="176" y="167" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="UIButton602_TouchUpInside:" destination="9pv-A4-QxB" id="605" eventType="touchUpInside"/>
+                                    <action selector="FourHoursBTN_TouchUpInside:" destination="9pv-A4-QxB" id="650" eventType="touchUpInside"/>
                                 </connections>
                                 <state key="normal" title="4 Hours"/>
                             </button>
@@ -41,25 +41,34 @@
                                 <rect key="frame" x="176" y="224" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="6 Hours"/>
+                                <connections>
+                                    <action selector="SixHoursBTN_TouchUpInside:" destination="9pv-A4-QxB" id="651" eventType="touchUpInside"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="604" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="176" y="289" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="8 Hours"/>
+                                <connections>
+                                    <action selector="EightHoursBTN_TouchUpInside:" destination="9pv-A4-QxB" id="652" eventType="touchUpInside"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="606" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="142" y="353" width="129" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="More than 8 hours"/>
+                                <connections>
+                                    <action selector="MoreThan8HoursBTN_TouchUpInside:" destination="9pv-A4-QxB" id="653" eventType="touchUpInside"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="First" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="4hoursBTN" destination="602" id="name-outlet-602"/>
-                        <outlet property="6hoursBTN" destination="603" id="name-outlet-603"/>
-                        <outlet property="8hoursBTN" destination="604" id="name-outlet-604"/>
+                        <outlet property="fourHoursBTN" destination="602" id="name-outlet-602"/>
+                        <outlet property="sixHoursBTN" destination="603" id="name-outlet-603"/>
+                        <outlet property="eightHoursBTN" destination="604" id="name-outlet-604"/>
                         <outlet property="moreThan8HoursBTN" destination="606" id="name-outlet-606"/>
                     </connections>
                 </viewController>
@@ -144,7 +153,7 @@
         </scene>
         <scene sceneID="221">
             <objects>
-                <viewController id="222" sceneMemberID="viewController">
+                <viewController id="222" sceneMemberID="viewController" customClass="ThirdViewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="219"/>
                         <viewControllerLayoutGuide type="bottom" id="220"/>
@@ -171,12 +180,16 @@
                             </label>
                         </subviews>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ThirdView" id="377"/>
+                    <tabBarItem key="tabBarItem" title="Under Construction" id="377" image="UnderConstruction.png"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="224" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="13" y="912"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="UnderConstruction.png" width="16" height="16"/>
+    </resources>
 </document>

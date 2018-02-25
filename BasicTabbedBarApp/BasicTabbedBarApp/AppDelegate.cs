@@ -9,7 +9,10 @@ namespace BasicTabbedBarApp
     public class AppDelegate : UIApplicationDelegate
     {
         // class-level declarations
-
+        public static int fourHours = 0;
+        public static int sixHours = 0;
+        public static int eightHours = 0;
+        public static int moreThanEightHours = 0;
         public override UIWindow Window
         {
             get;

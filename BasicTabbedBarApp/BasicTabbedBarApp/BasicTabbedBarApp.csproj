@@ -112,6 +112,13 @@
     <Compile Include="SecondViewController.designer.cs">
       <DependentUpon>SecondViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThirdViewController_.cs" />
+    <Compile Include="ThirdViewController_.designer.cs">
+      <DependentUpon>ThirdViewController_.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\UnderConstruction.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

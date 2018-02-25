@@ -15,44 +15,56 @@ namespace BasicTabbedBarApp
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton 4hoursBTN { get; set; }
+        UIKit.UIButton eightHoursBTN { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton 6hoursBTN { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton 8hoursBTN { get; set; }
+        UIKit.UIButton fourHoursBTN { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton moreThan8HoursBTN { get; set; }
 
-        [Action ("UIButton602_TouchUpInside:")]
+        [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void UIButton602_TouchUpInside (UIKit.UIButton sender);
+        UIKit.UIButton sixHoursBTN { get; set; }
+
+        [Action ("EightHoursBTN_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void EightHoursBTN_TouchUpInside (UIKit.UIButton sender);
+
+        [Action ("FourHoursBTN_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void FourHoursBTN_TouchUpInside (UIKit.UIButton sender);
+
+        [Action ("MoreThan8HoursBTN_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void MoreThan8HoursBTN_TouchUpInside (UIKit.UIButton sender);
+
+        [Action ("SixHoursBTN_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void SixHoursBTN_TouchUpInside (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
-            if (4hoursBTN != null) {
-                4hoursBTN.Dispose ();
-                4hoursBTN = null;
+            if (eightHoursBTN != null) {
+                eightHoursBTN.Dispose ();
+                eightHoursBTN = null;
             }
 
-            if (6hoursBTN != null) {
-                6hoursBTN.Dispose ();
-                6hoursBTN = null;
-            }
-
-            if (8hoursBTN != null) {
-                8hoursBTN.Dispose ();
-                8hoursBTN = null;
+            if (fourHoursBTN != null) {
+                fourHoursBTN.Dispose ();
+                fourHoursBTN = null;
             }
 
             if (moreThan8HoursBTN != null) {
                 moreThan8HoursBTN.Dispose ();
                 moreThan8HoursBTN = null;
+            }
+
+            if (sixHoursBTN != null) {
+                sixHoursBTN.Dispose ();
+                sixHoursBTN = null;
             }
         }
     }
